@@ -21,6 +21,5 @@ for(let key1 in input1){
         if(input1[key1] === input2[key1]){
             op1[key1] = input1[key1]
         }
-    }
 }
 console.log(op1)
