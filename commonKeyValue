@@ -1,0 +1,15 @@
+const input1 = {a:2, b:3, c:4 ,d:12, e:8}
+const input2 = {a:1, b:3, f:4 , g:12, e:8}
+
+//output 
+const output = {b:3, e:8}
+
+const op = {}
+for(let key1 in input1){
+    for(let key2 in input1){
+        if(key1 === key2 && input1[key1] === input2[key2]){
+            op[key1] = input1[key1]
+        }
+    }
+}
+console.log(op)
